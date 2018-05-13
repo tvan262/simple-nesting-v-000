@@ -15,7 +15,7 @@ def hopper
           :languages => ["C"]
         }
      }
-
+programmer_hash[:grace_hopper]
 
 end
 
@@ -39,6 +39,8 @@ def alan_kay_is_known_for
      }
 end
 
+programmer_hash[:alan_kay][:known_for]
+
 def dennis_ritchies_language
 	programmer_hash = 
  		{
@@ -56,6 +58,9 @@ def dennis_ritchies_language
         }
      }
 end
+
+ array = programmer_hash[:dennis_ritchie][:languages]
+   array.join
 
 def adding_matz
 # add the following information to the top level of programmer_hash
@@ -82,6 +87,10 @@ def adding_matz
 
     
 end
+
+programmer_hash[:yukihiro_matsumoto] = {:known_for => "Ruby",:languages => ["LISP", "C"]}
+programmer_hash
+
 
 def changing_alan
 	programmer_hash = 
@@ -123,3 +132,5 @@ def adding_to_dennis
      }
 
 end
+
+
